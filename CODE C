@@ -57,9 +57,11 @@ void ajouterMaladieFin(Maladie* nouvelle) {
     }
     printf("Maladie ajoutee a la fin.\n");
 }
+Maladie* rechercherMaladie(char* nom);
+
 
 void ajouterMaladieApres(Maladie* nouvelle, char* nomReference) {
-    Maladie* maladieRef =  creerMaladie(nomReference);
+    Maladie* maladieRef = rechercherMaladie(nomReference);
     if (maladieRef == NULL) {
         printf("La maladie '%s' n'a pas ete trouvee.\n", nomReference);
         return;
@@ -68,6 +70,7 @@ void ajouterMaladieApres(Maladie* nouvelle, char* nomReference) {
     maladieRef->suivant = nouvelle;
     printf("Maladie ajoutee apres '%s'.\n", nomReference);
 }
+
 
 void ajouterMaladieAvecChoix(Maladie* nouvelle) {
     if (nouvelle == NULL) {
