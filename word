@@ -1,0 +1,66 @@
+Mini-Projet : Gestion d'Hôpital en Langage C
+Nom de l'étudiant : Oukkas Mohamed amine
+Loudiyi abdeljabbar
+Arfy marouane
+Filière : 2AP G7 INFO
+Encadrant : omari kamal
+Année universitaire : 2024 - 2025
+ 
+Table des matières
+1. Introduction
+2. Objectifs du projet
+3. Méthodologie
+4. Fonctionnalités du programme
+5. Structure du code
+6. Résultats et analyse
+7. Conclusion et recommandations
+8. Bibliographie
+ 
+1. Introduction
+Dans le cadre de notre formation, un mini-projet nous a été confié avec pour objectif la réalisation d’un système de gestion d’hôpital en langage C. Ce projet vise à mettre en pratique les notions fondamentales de la programmation procédurale, notamment la gestion des structures de données comme les listes chaînées.
+2. Objectifs du projet
+L'objectif principal de ce projet est de développer un programme permettant de gérer efficacement les données relatives aux maladies et aux patients dans un hôpital. Le programme doit permettre : l’ajout, la suppression, la modification, la recherche et l’affichage des maladies, ainsi que l’enregistrement des patients associés. Une gestion rudimentaire des rendez-vous est également envisagée.
+3. Méthodologie
+Le développement du projet s’est déroulé selon plusieurs étapes :
+- Analyse des besoins fonctionnels
+- Conception de la structure de données (listes chaînées)
+- Implémentation progressive des fonctionnalités en langage C
+- Tests unitaires et validation des résultats
+- Rédaction du rapport final
+4. Fonctionnalités du programme
+- Ajout, modification, suppression et recherche de maladies
+- Affichage des maladies par catégorie
+- Enregistrement des données des patients
+- Gestion des rendez-vous
+- Interface textuelle simple en mode console
+5. Structure du code
+Le programme est structuré autour de l’utilisation des listes chaînées pour stocker les informations concernant les maladies et les patients. Voici un aperçu des principales parties du code :
+
+- **Structures de données** : Déclaration des structures `Maladie` et `Patient` avec des champs tels que nom, symptômes, traitement, âge, sexe, etc.
+- **Ajout d'une maladie** : Une fonction permet de créer un nouveau nœud et de l’insérer au début ou à la fin de la liste.
+- **Suppression** : Suppression en début, fin ou après une maladie spécifique.
+- **Recherche** : Recherche par nom ou mot-clé dans les détails de la maladie.
+- **Affichage** : Affiche les maladies avec leurs détails, ou classées par catégorie.
+- **Enregistrement patient** : Associe un patient à une ou plusieurs maladies.
+- **Gestion de rendez-vous** : Organisation simple par date, lieu ou description.
+- **Menu principal** : Interface en console avec navigation textuelle intuitive.
+6. Résultats et analyse
+Le programme développé permet une gestion fonctionnelle des maladies et des patients. Toutes les fonctionnalités demandées ont été implémentées avec succès. Les tests effectués ont confirmé la stabilité des opérations de manipulation de listes chaînées. Toutefois, l’interface utilisateur reste basique et pourrait être améliorée par l’intégration d’un affichage graphique.
+
+Avantages :
+- Manipulation dynamique des données grâce aux listes chaînées
+- Code modulaire et extensible
+
+Limites :
+- Interface textuelle peu ergonomique
+- Pas de persistance automatique (besoin d'ajouter des sauvegardes dans des fichiers)
+7. Conclusion et recommandations
+Ce projet nous a permis de maîtriser les concepts fondamentaux de la programmation en C, en particulier la gestion des listes chaînées. Nous avons appris à structurer un programme complexe tout en assurant la clarté et la lisibilité du code. Pour les projets futurs, il serait judicieux d'ajouter :
+
+- Une interface graphique (par exemple avec GTK)
+- Un système de sauvegarde automatique dans des fichiers
+- Une meilleure gestion des erreurs et des exceptions
+8. Bibliographie
+- Documentation officielle du langage C (ISO/IEC 9899)
+- Livres et supports de cours de programmation procédurale
+- Tutoriels en ligne : OpenClassrooms, GeeksforGeeks, Stack Overflow
