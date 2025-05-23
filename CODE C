@@ -59,7 +59,7 @@ void ajouterMaladieFin(Maladie* nouvelle) {
 }
 
 void ajouterMaladieApres(Maladie* nouvelle, char* nomReference) {
-    Maladie* maladieRef = rechercherMaladie(nomReference);
+    Maladie* maladieRef =  creerMaladie(nomReference);
     if (maladieRef == NULL) {
         printf("La maladie '%s' n'a pas ete trouvee.\n", nomReference);
         return;
@@ -211,7 +211,7 @@ Maladie* rechercheAvecChoix(char* nom, char* nomReference) {
 }
 
 void modifierMaladie(char* nom) {
-    Maladie* m = rechercherMaladie(nom);
+    Maladie* m = rechercherMaladieFin(nom);
     if (m == NULL) {
         printf("Maladie non trouvee.\n");
         return;
@@ -438,7 +438,7 @@ void menu() {
             fgets(nom, 50, stdin);
             nom[strcspn(nom, "\n")] = 0;
 
-            Maladie* m = rechercherMaladie(nom);
+            Maladie* m = rechercherMaladieFin(nom);
             if (m != NULL) {
                 printf("Maladie trouvee:\n");
                 printf("Nom: %s\n", m->nom);
@@ -504,7 +504,7 @@ void menu() {
             fgets(nomMaladie, 50, stdin);
             nomMaladie[strcspn(nomMaladie, "\n")] = 0;
 
-            Maladie* mal = rechercherMaladie(nomMaladie);
+            Maladie* mal =  rechercherMaladieFin(nomMaladie);
             if (mal == NULL) {
                 printf("Maladie non trouvee. Patient enregistre sans maladie associee.\n");
             }
